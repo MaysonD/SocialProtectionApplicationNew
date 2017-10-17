@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="documentsTab" text="Документы" xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.DocumentsTabController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <TableView fx:id="documentsTable" editable="true" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="documentNameColumn" prefWidth="75.0" text="Наименование документа"/>
+                        <TableColumn fx:id="seriesOfDocumentColumn" prefWidth="75.0" text="Серия"/>
+                        <TableColumn fx:id="numberOfDocumentColumn" prefWidth="75.0" text="Номер"/>
+                        <TableColumn fx:id="documentIssuedByColumn" prefWidth="75.0" text="Кем выдан"/>
+                        <TableColumn fx:id="dateOfIssueDocumentColumn" prefWidth="75.0" text="Дата выдачи"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addDocumentButton" mnemonicParsing="false" onAction="#handleAddDocument"
+                        prefHeight="25.0" prefWidth="180.0" text="Добавить" AnchorPane.bottomAnchor="1.0"
+                        AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editDocumentButton" mnemonicParsing="false" onAction="#handleEditDocument"
+                        prefHeight="25.0" prefWidth="180.0" text="Изменить " AnchorPane.bottomAnchor="1.0"
+                        AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteDocumentButton" mnemonicParsing="false" onAction="#handleDeleteDocument"
+                        prefHeight="25.0" prefWidth="180.0" text="Удалить" AnchorPane.bottomAnchor="1.0"
+                        AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

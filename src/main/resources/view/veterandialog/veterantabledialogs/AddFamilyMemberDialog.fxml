@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="380.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="com.module.controllers.veterandialog.tables.AddFamilyMemberController">
+    <children>
+        <Label layoutX="35.0" layoutY="64.0" text="Степень родства" AnchorPane.leftAnchor="20.0"
+               AnchorPane.topAnchor="40.0"/>
+        <Label layoutX="36.0" layoutY="114.0" text="ФИО" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0"/>
+        <Label layoutX="35.0" layoutY="168.0" text="Дата рождения" AnchorPane.leftAnchor="20.0"
+               AnchorPane.topAnchor="140.0"/>
+        <Label layoutX="35.0" layoutY="215.0" text="Место жительства" AnchorPane.leftAnchor="20.0"
+               AnchorPane.topAnchor="190.0"/>
+        <Label layoutX="38.0" layoutY="265.0" text="Телефонный номер" AnchorPane.leftAnchor="20.0"
+               AnchorPane.topAnchor="240.0"/>
+        <TextField fx:id="relationDegreeField" layoutX="161.0" layoutY="60.0" prefHeight="25.0" prefWidth="170.0"
+                   AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="40.0"/>
+        <TextField fx:id="fullNameField" layoutX="161.0" layoutY="110.0" prefHeight="25.0" prefWidth="170.0"
+                   AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="90.0"/>
+        <DatePicker fx:id="dateOfBirthField" layoutX="161.0" layoutY="164.0" prefHeight="25.0" prefWidth="170.0"
+                    AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="140.0"/>
+        <TextField fx:id="addressField" layoutX="161.0" layoutY="211.0" prefHeight="25.0" prefWidth="170.0"
+                   AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="190.0"/>
+        <TextField fx:id="phoneNumberField" layoutX="161.0" layoutY="261.0" prefHeight="25.0" prefWidth="170.0"
+                   AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="240.0"/>
+        <Button fx:id="saveButton" layoutX="171.0" layoutY="325.0" mnemonicParsing="false" onAction="#saveButtonClick"
+                prefHeight="25.0" prefWidth="75.0" text="Сохранить" AnchorPane.leftAnchor="171.0"
+                AnchorPane.topAnchor="325.0"/>
+        <Button fx:id="cancelButton" layoutX="252.0" layoutY="346.0" mnemonicParsing="false"
+                onAction="#cancelButtonClick" prefHeight="25.0" prefWidth="75.0" text="Отмена"
+                AnchorPane.leftAnchor="252.0" AnchorPane.topAnchor="325.0"/>
+    </children>
+</AnchorPane>

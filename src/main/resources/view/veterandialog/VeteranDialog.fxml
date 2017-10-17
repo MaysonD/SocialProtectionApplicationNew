@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+      xmlns="http://javafx.com/javafx/8.0.111"
+      fx:controller="com.module.controllers.veterandialog.VeteranDialogManager">
+    <children>
+        <fx:include fx:id="mainDataPain" source="MainDataPane.fxml"/>
+        <fx:include fx:id="tabsPane" source="TabsPane.fxml"/>
+        <fx:include fx:id="footerPane" source="FooterPane.fxml"/>
+    </children>
+</VBox>

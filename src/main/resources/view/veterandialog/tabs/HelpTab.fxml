@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="helpTab" text="Помощь"
+     xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.HelpTabController">
+    <content>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="helpTable" editable="true" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="organizationNameColumn" prefWidth="75.0" text="Наименование организации"/>
+                        <TableColumn fx:id="typeOfHelpColumn" prefWidth="75.0" text="Вид помощи"/>
+                        <TableColumn fx:id="helpDateColumn" prefWidth="75.0" text="Дата представления"/>
+                        <TableColumn fx:id="baseToHelpColumn" prefWidth="75.0" text="Основание"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addHelpButton" layoutX="7.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleAddHelp" prefHeight="25.0" prefWidth="180.0" text="Добавить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editHelpButton" layoutX="181.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleEditHelp" prefHeight="25.0" prefWidth="180.0" text="Изменить "
+                        AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteHelpButton" layoutX="361.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleDeleteHelp" prefHeight="25.0" prefWidth="180.0" text="Удалить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

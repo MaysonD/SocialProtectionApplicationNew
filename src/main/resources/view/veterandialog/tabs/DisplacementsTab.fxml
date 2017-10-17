@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="displacementsTab" text="Перемещения"
+     xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.DisplacementsTabController">
+    <content>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="displacementTable" editable="true" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="arrivedColumn" prefWidth="75.0" text="прибыл">
+                            <columns>
+                                <TableColumn fx:id="arrivedDateColumn" prefWidth="75.0" text="Дата"/>
+                                <TableColumn fx:id="arrivedPlaceColumn" prefWidth="75.0" text="Место"/>
+                            </columns>
+                        </TableColumn>
+                        <TableColumn fx:id="decreasedColumn" prefWidth="75.0" text="убыл">
+                            <columns>
+                                <TableColumn fx:id="decreasedDateColumn" prefWidth="75.0" text="Дата"/>
+                                <TableColumn fx:id="decreasedPlaceColumn" prefWidth="75.0" text="Место"/>
+                            </columns>
+                        </TableColumn>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addDisplacementButton" layoutX="7.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleAddDisplacement" prefHeight="25.0" prefWidth="180.0" text="Добавить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editDisplacementButton" layoutX="181.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleEditDisplacement" prefHeight="25.0" prefWidth="180.0" text="Изменить "
+                        AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteDisplacementButton" layoutX="361.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleDeleteDisplacement" prefHeight="25.0" prefWidth="180.0" text="Удалить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

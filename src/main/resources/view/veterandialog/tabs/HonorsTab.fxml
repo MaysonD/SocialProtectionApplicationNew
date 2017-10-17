@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="honorsTab" text="Награды" xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.HonorsTabController">
+    <content>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="honorsTable" editable="true" layoutY="25.0" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="nameOfHonorColumn" prefWidth="140.0" text="Название награды"/>
+                        <TableColumn fx:id="dateOfReceivingColumn" prefWidth="150.0" text="Дата получения"/>
+                        <TableColumn fx:id="orderColumn" prefWidth="100.0" text="Приказ"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addHonorButton" layoutY="118.0" mnemonicParsing="false" onAction="#handleAddHonor"
+                        prefHeight="25.0" prefWidth="180.0" text="Добавить " AnchorPane.bottomAnchor="1.0"
+                        AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editHonorButton" layoutX="180.0" layoutY="118.0" mnemonicParsing="false"
+                        onAction="#handleEditHonor" prefHeight="25.0" prefWidth="180.0" text="Изменить "
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteHonorButton" layoutX="360.0" layoutY="120.0" mnemonicParsing="false"
+                        onAction="#handleDeleteHonor" prefHeight="25.0" prefWidth="180.0" text="Удалить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

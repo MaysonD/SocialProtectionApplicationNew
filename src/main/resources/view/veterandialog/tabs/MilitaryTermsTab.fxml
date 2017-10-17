@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="militaryTermsTab" text="Срок службы"
+     xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.MilitaryTermsTabController">
+    <content>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="militaryTermTable" editable="true" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="militaryUnitColumn" prefWidth="75.0" text="Воинская часть"/>
+                        <TableColumn fx:id="countryOfMilitaryServiceColumn" prefWidth="75.0" text="Страна службы"/>
+                        <TableColumn fx:id="localityOfMilitaryServiceColumn" prefWidth="75.0" text="Населенный пункт"/>
+                        <TableColumn fx:id="startOfMilitaryServiceColumn" prefWidth="75.0" text="Начало Службы"/>
+                        <TableColumn fx:id="endOfMilitaryServiceColumn" prefWidth="75.0" text="Конец службы"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addMilitaryTermButton" layoutX="14.0" layoutY="118.0" mnemonicParsing="false"
+                        onAction="#handleAddMilitaryTerm" prefHeight="25.0" prefWidth="180.0" text="Добавить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editMilitaryTermButton" layoutX="181.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleEditMilitaryTerm" prefHeight="25.0" prefWidth="180.0" text="Изменить "
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteMilitaryTermButton" layoutX="360.0" layoutY="120.0" mnemonicParsing="false"
+                        onAction="#handleDeleteMilitaryTerm" prefHeight="25.0" prefWidth="180.0" text="Удалить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

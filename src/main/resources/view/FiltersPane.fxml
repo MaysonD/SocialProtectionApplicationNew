@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.CheckComboBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="filtersPane" prefHeight="821.0" prefWidth="200.0"
+            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.module.controllers.FiltersController">
+    <children>
+        <ScrollPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane prefHeight="935.0" prefWidth="184.0">
+                    <children>
+                        <CheckBox fx:id="isDeadCheckBox" layoutX="5.0" layoutY="14.0" mnemonicParsing="false"
+                                  onAction="#handleIsDeadCheckbox" text="Отображать умерших" AnchorPane.leftAnchor="5.0"
+                                  AnchorPane.rightAnchor="5.0"/>
+                        <CheckComboBox fx:id="districtFilterField" layoutX="5.0" layoutY="57.0" prefWidth="150.0"
+                                       AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <CheckComboBox fx:id="categoryFilterField" layoutX="5.0" layoutY="107.0" prefWidth="150.0"
+                                       AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <CheckComboBox fx:id="subcategoryFilterField" disable="true" layoutX="5.0" layoutY="156.0"
+                                       prefWidth="150.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <CheckComboBox fx:id="honorsFilterField" layoutX="5.0" layoutY="207.0"
+                                       AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="militaryUnitFilterField" layoutX="5.0" layoutY="262.0"
+                                   AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="90.0" prefHeight="17.0" prefWidth="79.0" text="Категория"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="139.0" prefHeight="17.0" prefWidth="79.0" text="Подкатегория"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="242.0" prefHeight="20.0" prefWidth="79.0" text="Военная часть"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="countryOfMilitaryServiceFilterField" layoutX="5.0" layoutY="313.0"
+                                   AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="296.0" prefHeight="17.0" prefWidth="79.0" text="Страна"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="localityOfMilitaryServiceFilterField" layoutX="5.0" layoutY="369.0"
+                                   AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="344.0" prefHeight="25.0" prefWidth="109.0" text="Населенный пункт"
+                               AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="woundTypeFilterField" layoutX="5.0" layoutY="421.0"
+                                   AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="woundDisabilityFilterField" layoutX="5.0" layoutY="476.0"
+                                   AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="regionalExecutiveCommitteeFilterField" layoutX="5.0" layoutY="548.0"
+                                   prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="5.0"
+                                   AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="villageExecutiveCommitteeFilterField" layoutX="5.0" layoutY="624.0"
+                                   prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="5.0"
+                                   AnchorPane.rightAnchor="5.0"/>
+                        <TextField fx:id="marchingOrganizationFilterField" layoutX="5.0" layoutY="680.0"
+                                   prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="5.0"
+                                   AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="457.0" prefHeight="19.0" prefWidth="109.0" text="Инвалидность"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="402.0" prefHeight="19.0" prefWidth="109.0" text="Тип ранения"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="38.0" prefHeight="19.0" prefWidth="109.0" text="Район"
+                               textAlignment="CENTER" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="582.0" prefHeight="42.0" prefWidth="170.0"
+                               text="Сельский исполнительный комитет" wrapText="true" AnchorPane.leftAnchor="5.0"
+                               AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="508.0" prefHeight="40.0" prefWidth="170.0"
+                               text="Районный исполнительный комитет" wrapText="true" AnchorPane.leftAnchor="5.0"
+                               AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="656.0" prefHeight="24.0" prefWidth="170.0"
+                               text="Шествующая организация" textAlignment="CENTER" wrapText="true"
+                               AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                        <Label layoutX="5.0" layoutY="190.0" prefHeight="17.0" prefWidth="79.0" text="Награды"
+                               textAlignment="CENTER"/>
+                        <CheckBox fx:id="aloneCheckBox" layoutX="5.0" layoutY="715.0" mnemonicParsing="false"
+                                  text="Одинокие" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

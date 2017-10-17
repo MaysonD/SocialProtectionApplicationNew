@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="familyMembersTab" text="Члены семьи"
+     xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.FamilyMembersTabController">
+    <content>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="familyMembersTable" editable="true" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="familyMembersRelationDegreeColumn" prefWidth="75.0" text="Степень родства"/>
+                        <TableColumn fx:id="familyMembersFullNameColumn" prefWidth="75.0" text="ФИО"/>
+                        <TableColumn fx:id="familyMembersDateOfBirthColumn" prefWidth="75.0" text="Дата рождения"/>
+                        <TableColumn fx:id="familyMembersAddressColumn" prefWidth="75.0" text="Место жительства"/>
+                        <TableColumn fx:id="familyMembersPhoneNumberColumn" prefWidth="75.0" text="Номер телефона"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addFamilyMemberButton" layoutX="49.0" layoutY="117.0" mnemonicParsing="false"
+                        onAction="#handleAddFamilyMember" prefHeight="25.0" prefWidth="180.0" text="Добавить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editFamilyMemberButton" layoutX="180.0" layoutY="120.0" mnemonicParsing="false"
+                        onAction="#handleEditFamilyMember" prefHeight="25.0" prefWidth="180.0" text="Изменить "
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteFamilyMemberButton" layoutX="360.0" layoutY="120.0" mnemonicParsing="false"
+                        onAction="#handleDeleteFamilyMember" prefHeight="25.0" prefWidth="180.0" text="Удалить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

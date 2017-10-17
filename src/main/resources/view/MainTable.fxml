@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainTablePane" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="com.module.controllers.MainTableController">
+    <children>
+        <TableView fx:id="mainTable" layoutX="20.0" layoutY="20.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0"
+                   prefWidth="-1.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="caseNumberColumn" prefWidth="80" text="Номер Дела"/>
+                <TableColumn fx:id="militaryRankColumn" prefWidth="120.0" text="Воинское звание"/>
+                <TableColumn fx:id="lastNameColumn" prefWidth="75" text="Фамилия"/>
+                <TableColumn fx:id="firstNameColumn" prefWidth="75" text="Имя"/>
+                <TableColumn fx:id="middleNameColumn" prefWidth="75" text="Отчество"/>
+                <TableColumn fx:id="dateOfBirthColumn" prefWidth="100.0" text="Дата Рождения"/>
+                <TableColumn fx:id="categoryColumn" prefWidth="75" text="Категория"/>
+                <TableColumn fx:id="districtColumn" prefWidth="130" text="Район"/>
+                <TableColumn fx:id="addressColumn" prefWidth="120.0" text="Адрес"/>
+            </columns>
+            <opaqueInsets>
+                <Insets right="1.0"/>
+            </opaqueInsets>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</AnchorPane>

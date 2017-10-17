@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="460.0"
+            prefWidth="290.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="com.module.controllers.referencebook.NewWoundDisabilityDialogController">
+    <children>
+        <TableView fx:id="existsWoundDisabilitiesTable" prefHeight="290.0" prefWidth="290.0"
+                   AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="woundDisabilitiesColumn" editable="false" maxWidth="1.7976931348623157E308"
+                             minWidth="290.0" prefWidth="290.0" text="Список инвалидностей"/>
+            </columns>
+        </TableView>
+        <TextField fx:id="newWoundDisabilityTextField" layoutX="68.0" layoutY="345.0" prefHeight="34.0"
+                   prefWidth="270.0" promptText="Инвалидность" AnchorPane.bottomAnchor="81.0"
+                   AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"/>
+        <Button fx:id="saveButton" disable="true" layoutX="47.0" layoutY="400.0" mnemonicParsing="false"
+                onAction="#handleSaveButton" prefHeight="25.0" prefWidth="100.0" text="Сохранить"
+                AnchorPane.bottomAnchor="35.0"/>
+        <Button fx:id="closeButton" layoutX="159.0" layoutY="400.0" mnemonicParsing="false"
+                onAction="#handleCloseButton" prefHeight="25.0" prefWidth="100.0" text="Выход"
+                AnchorPane.bottomAnchor="35.0"/>
+        <Button fx:id="deleteButton" disable="true" layoutX="159.0" layoutY="305.0" mnemonicParsing="false"
+                onAction="#handleDeleteButton" prefHeight="25.0" prefWidth="100.0" text="Удалить"
+                AnchorPane.bottomAnchor="130.0"/>
+        <Button fx:id="editButton" disable="true" layoutX="47.0" layoutY="305.0" mnemonicParsing="false"
+                onAction="#handleEditButton" prefHeight="25.0" prefWidth="100.0" text="Редактировать"
+                AnchorPane.bottomAnchor="130.0"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="com.module.controllers.RootManager">
+    <right>
+        <fx:include fx:id="filtersPane" source="FiltersPane.fxml" BorderPane.alignment="CENTER"/>
+    </right>
+    <center>
+        <fx:include fx:id="mainTablePane" source="MainTable.fxml" BorderPane.alignment="CENTER"/>
+    </center>
+    <top>
+        <fx:include fx:id="headerPane" source="HeaderPane.fxml" BorderPane.alignment="CENTER"/>
+    </top>
+    <bottom>
+        <fx:include fx:id="footerPane" source="FooterPane.fxml" BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>

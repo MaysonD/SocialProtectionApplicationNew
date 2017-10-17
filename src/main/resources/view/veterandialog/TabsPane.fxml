@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TabPane?>
+<TabPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainTabsPane" prefHeight="180.0" prefWidth="780.0"
+         tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111"
+         fx:controller="com.module.controllers.veterandialog.TabsPaneManager">
+    <tabs>
+        <fx:include fx:id="honorsTab" source="tabs/HonorsTab.fxml"/>
+        <fx:include fx:id="documentsTab" source="tabs/DocumentsTab.fxml"/>
+        <fx:include fx:id="militaryTermsTab" source="tabs/MilitaryTermsTab.fxml"/>
+        <fx:include fx:id="woundsTab" source="tabs/WoundsTab.fxml"/>
+        <fx:include fx:id="familyMembersTab" source="tabs/FamilyMembersTab.fxml"/>
+        <fx:include fx:id="workPlacesTab" source="tabs/WorkPlacesTab.fxml"/>
+        <fx:include fx:id="displacementsTab" source="tabs/DisplacementsTab.fxml"/>
+        <fx:include fx:id="helpTab" source="tabs/HelpTab.fxml"/>
+    </tabs>
+</TabPane>

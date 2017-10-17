@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="excelDialogRoot" maxHeight="475.0" maxWidth="475.0"
+            minHeight="375.0"
+            minWidth="475.0" prefHeight="375.0" prefWidth="475.0"
+            xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="com.module.controllers.excel.ExportInExcelDialogController">
+    <children>
+        <CheckBox fx:id="caseNumber" layoutX="44.0" layoutY="34.0" mnemonicParsing="false" text="Номер дела"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="militaryRank" layoutX="45.0" layoutY="63.0" mnemonicParsing="false" text="Воинское звание"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="firstName" layoutX="45.0" layoutY="94.0" mnemonicParsing="false" text="Имя"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="secondName" layoutX="45.0" layoutY="122.0" mnemonicParsing="false" text="Фамилия"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="middleName" layoutX="44.0" layoutY="152.0" mnemonicParsing="false" text="Отчество"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="dateOfBirth" layoutX="42.0" layoutY="183.0" mnemonicParsing="false" text="Дата рождения"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="category" layoutX="19.0" layoutY="209.0" mnemonicParsing="false" text="Категория"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="subcategory" layoutX="24.0" layoutY="235.0" mnemonicParsing="false" text="Подкатегория"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="position" layoutX="20.0" layoutY="260.0" mnemonicParsing="false" text="Воинская должность"
+                  AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="militarySubdivision" layoutX="19.0" layoutY="286.0" mnemonicParsing="false"
+                  text="Подразделение" AnchorPane.leftAnchor="20.0"/>
+        <CheckBox fx:id="district" layoutX="227.0" layoutY="34.0" mnemonicParsing="false" text="Район"
+                  AnchorPane.leftAnchor="230.0"/>
+        <CheckBox fx:id="registrationAddress" layoutX="227.0" layoutY="63.0" mnemonicParsing="false"
+                  text="Адрес регистрации" AnchorPane.leftAnchor="230.0"/>
+        <CheckBox fx:id="address" layoutX="227.0" layoutY="94.0" mnemonicParsing="false" text="Адрес места жительства"
+                  AnchorPane.leftAnchor="230.0"/>
+        <CheckBox fx:id="phoneNumber" layoutX="227.0" layoutY="122.0" mnemonicParsing="false" text="Номер телеофна"
+                  AnchorPane.leftAnchor="230.0"/>
+        <CheckBox fx:id="regionalExecutiveCommittee" layoutX="227.0" layoutY="152.0" mnemonicParsing="false"
+                  text="Районный исполнительный комитет" AnchorPane.leftAnchor="230.0"/>
+        <CheckBox fx:id="villageExecutiveCommittee" layoutX="227.0" layoutY="183.0" mnemonicParsing="false"
+                  text="Сельский исполнительный комитет" AnchorPane.leftAnchor="230.0"/>
+        <CheckBox fx:id="marchingOrganization" layoutX="227.0" layoutY="209.0" mnemonicParsing="false"
+                  text="Шествующая организация" AnchorPane.leftAnchor="230.0"/>
+        <Button fx:id="exportButton" layoutX="20.0" layoutY="334.0" mnemonicParsing="false"
+                onAction="#handleExportButton" text="Экспорт" AnchorPane.leftAnchor="20.0"/>
+        <Button fx:id="closeButton" layoutX="394.0" layoutY="334.0" mnemonicParsing="false"
+                onAction="#handleCloseButton" text="Выход" AnchorPane.leftAnchor="404.0"/>
+    </children>
+</AnchorPane>

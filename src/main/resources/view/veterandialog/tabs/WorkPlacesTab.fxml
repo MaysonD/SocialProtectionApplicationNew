@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<Tab xmlns:fx="http://javafx.com/fxml/1" fx:id="workPlacesTab" text="Место работы"
+     xmlns="http://javafx.com/javafx/8.0.111"
+     fx:controller="com.module.controllers.veterandialog.tabs.WorkPlacesTabController">
+    <content>
+        <AnchorPane>
+            <children>
+                <TableView fx:id="workPlaceTable" editable="true" prefHeight="120.0" prefWidth="780.0"
+                           AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="localityOfWorkColumn" prefWidth="75.0" text="Населенный пункт"/>
+                        <TableColumn fx:id="workOrganizationColumn" prefWidth="75.0" text="Организация"/>
+                        <TableColumn fx:id="workPositionColumn" prefWidth="75.0" text="Должность"/>
+                        <TableColumn fx:id="numberOfDepartmentColumn" prefWidth="75.0" text="Номер отдела кадров"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <Button fx:id="addWorkPlaceButton" layoutX="22.0" layoutY="124.0" mnemonicParsing="false"
+                        onAction="#handleAddWorkPlace" prefHeight="25.0" prefWidth="180.0" text="Добавить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0"/>
+                <Button fx:id="editWorkPlaceButton" layoutX="181.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleEditWorkPlace" prefHeight="25.0" prefWidth="180.0" text="Изменить "
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="181.0"/>
+                <Button fx:id="deleteWorkPlaceButton" layoutX="361.0" layoutY="125.0" mnemonicParsing="false"
+                        onAction="#handleDeleteWorkPlace" prefHeight="25.0" prefWidth="180.0" text="Удалить"
+                        AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="361.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

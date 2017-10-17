@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="footerPane" prefHeight="80.0" prefWidth="888.0"
+            xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.module.controllers.FooterController">
+    <children>
+        <Pagination fx:id="tableViewPagination" layoutX="48.0" layoutY="22.0" prefHeight="46.0" prefWidth="272.0"
+                    AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="25.0"/>
+        <ButtonBar layoutX="585.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0"
+                   AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+            <buttons>
+                <Button fx:id="useFilters" mnemonicParsing="false" onAction="#useFiltersHandle" prefHeight="25.0"
+                        prefWidth="135.0" text="Применить"/>
+                <Button fx:id="clearFilters" mnemonicParsing="false" onAction="#clearFiltersHandle" text="Очистить"/>
+            </buttons>
+        </ButtonBar>
+        <ButtonBar buttonMinWidth="30.0" layoutX="347.0" layoutY="10.0" minWidth="47.0" prefHeight="60.0"
+                   prefWidth="340.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="215.0"
+                   AnchorPane.topAnchor="10.0">
+            <buttons>
+                <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDeleteVeteran" prefHeight="25.0"
+                        text="Удалить"/>
+                <Button fx:id="editVeteranButton" mnemonicParsing="false" onAction="#handleEditVeteran"
+                        prefHeight="25.0" text="Редактировать"/>
+                <Button fx:id="addVeteranButton" mnemonicParsing="false" onAction="#handleAddVeteran" prefHeight="25.0"
+                        text="Добавить"/>
+            </buttons>
+        </ButtonBar>
+        <TextField fx:id="recordsCountField" disable="true" editable="false" layoutX="284.0" layoutY="28.0"
+                   prefHeight="25.0" prefWidth="69.0"/>
+    </children>
+</AnchorPane>
